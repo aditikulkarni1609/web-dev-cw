@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weatherapp.css">
+    <script src="weather.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .body{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color: green;
+            height: 100px;
+        }
+        .header #btn{
+            background-color: white;
+            border-radius: 20%;
+            
+        }
+        .main{
+            background-color: lightgreen;
+            height: calc(100vh - 100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!--search button and "enter location---->
+        <div class="search">
+            <div class="locationame">
+                <input type="text" class="locationinput" placeholder="Enter Location">
+            </div>
+             <div class="searchbtn">
+                <button id="btn">Search</button>
+             </div>
+        </div>
+    </div>
+    <div class="main">
+         <!---weather,place,weathericon-->
+        <div class="mainbox">
+            <div class="temp">25°C</div>
+            <div class="place">Delhi</div>
+            <div class="weathericon"></div>
+        </div>
+    </div>
+</body>
+</html>
